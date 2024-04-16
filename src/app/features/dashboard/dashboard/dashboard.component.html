@@ -1,30 +1,35 @@
 <div class="bg-blue-100">
   <div class="container mx-auto bg-neutral-100 px-3 py-10 rounded-lg">
     <app-top-nav></app-top-nav>
-    <div class="flex flex-col gap-6 my-8">
-      <div class="flex items-center gap-3  cursor-pointer">
-        <img src="assets/icons/overview.svg" class="w-8 text-neutral-200">
-        <p routerLink="/dashboard/overview">Overview</p>
+    <div class="flex">
+      <div class="flex flex-col gap-8 my-8">
+        <div class="flex items-center gap-3 cursor-pointer">
+          <img src="assets/icons/overview.svg" class="w-8 text-neutral-200">
+          <p routerLink="/dashboard/overview">Overview</p>
+        </div>
+        <div class="flex items-center gap-3 cursor-pointer">
+          <img src="assets/icons/accounts.svg" class="w-8 text-neutral-200">
+          <p routerLink="/dashboard/accounts">Accounts</p>
+        </div>
+        <div class="flex items-center gap-3 cursor-pointer">
+          <img src="assets/icons/invoice.svg" class="w-8 text-neutral-200">
+          <p routerLink="/dashboard/invoices">Invoices</p>
+        </div>
+        <div class="flex items-center gap-3 cursor-pointer">
+          <img src="assets/icons/report.svg" class="w-8 text-neutral-200">
+          <p routerLink="/dashboard/reports">Reports</p>
+        </div>
+        <div class="flex items-center gap-3 cursor-pointer">
+          <img src="assets/icons/documents.svg" class="w-8 text-neutral-200">
+          <p routerLink="/dashboard/documents">Documents</p>
+        </div>
+        <div class="flex items-center gap-3 cursor-pointer">
+          <img src="assets/icons/contacts.svg" class="w-8 text-neutral-200">
+          <p routerLink="/dashboard/contacts">Contacts</p>
+        </div>
       </div>
-      <div class="flex items-center gap-3 cursor-pointer">
-        <img src="assets/icons/accounts.svg" class="w-8 text-neutral-200">
-        <p routerLink="/dashboard/accounts">Accounts</p>
-      </div>
-      <div class="flex items-center gap-3 cursor-pointer">
-        <img src="assets/icons/invoice.svg" class="w-8 text-neutral-200">
-        <p routerLink="/dashboard/invoices">Invoices</p>
-      </div>
-      <div class="flex items-center gap-3 cursor-pointer">
-        <img src="assets/icons/report.svg" class="w-8 text-neutral-200">
-        <p routerLink="/dashboard/reports">Reports</p>
-      </div>
-      <div class="flex items-center gap-3 cursor-pointer">
-        <img src="assets/icons/documents.svg" class="w-8 text-neutral-200">
-        <p routerLink="/dashboard/documents">Documents</p>
-      </div>
-      <div class="flex items-center gap-3 cursor-pointer">
-        <img src="assets/icons/contacts.svg" class="w-8 text-neutral-200">
-        <p routerLink="/dashboard/contacts">Contacts</p>
+      <div class="text-center flex-grow py-20">
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>
