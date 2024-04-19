@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {TopNavComponent} from "../../../top-nav/top-nav.component";
 import {RouterLink, RouterOutlet} from "@angular/router";
+import {AppSvgIconComponent} from "../../../shared/app-svg-icon/app-svg-icon.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +9,8 @@ import {RouterLink, RouterOutlet} from "@angular/router";
   imports: [
     TopNavComponent,
     RouterLink,
-    RouterOutlet
+    RouterOutlet,
+    AppSvgIconComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'

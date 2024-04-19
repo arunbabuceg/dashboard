@@ -1,36 +1,39 @@
-<div class="bg-blue-100">
-  <div class="container mx-auto bg-neutral-100 px-3 py-10 rounded-lg">
+<div class="bg-blue-100 pb-16 pt-6">
+  <div class="container mx-auto bg-neutral-100 px-3 rounded-lg">
+    <div class="pb-3 py-3">
     <app-top-nav></app-top-nav>
-    <div class="flex">
-      <div class="flex flex-col gap-8 my-8">
-        <div class="flex items-center gap-3 cursor-pointer">
-          <img src="assets/icons/overview.svg" class="w-8 text-neutral-200">
-          <p routerLink="/dashboard/overview">Overview</p>
+    </div>
+    <div class="grid grid-cols-5">
+    <div class="flex flex-col gap-8 py-8 col-span-1">
+          <div class="flex items-center gap-3 cursor-pointer">
+            <app-svg-icon src="assets/icons/overview.svg" class="w-8 text-neutral-200"></app-svg-icon>
+            <p routerLink="/dashboard/overview">Overview</p>
+          </div>
+          <div class="flex items-center gap-3 cursor-pointer">
+            <app-svg-icon src="assets/icons/accounts.svg" class="w-8 text-neutral-200"></app-svg-icon>
+            <p routerLink="/dashboard/accounts">Accounts</p>
+          </div>
+          <div class="flex items-center gap-3 cursor-pointer">
+            <app-svg-icon src="assets/icons/invoice.svg" class="w-8 text-neutral-200"></app-svg-icon>
+            <p routerLink="/dashboard/invoices">Invoices</p>
+          </div>
+          <div class="flex items-center gap-3 cursor-pointer">
+            <app-svg-icon src="assets/icons/report.svg" class="w-8 text-neutral-200"></app-svg-icon>
+            <p routerLink="/dashboard/reports">Reports</p>
+          </div>
+          <div class="flex items-center gap-3 cursor-pointer">
+            <app-svg-icon src="assets/icons/documents.svg" class="w-8 text-neutral-200"></app-svg-icon>
+            <p routerLink="/dashboard/documents">Documents</p>
+          </div>
+          <div class="flex items-center gap-3 cursor-pointer">
+            <app-svg-icon src="assets/icons/contacts.svg" class="w-8 text-neutral-200"></app-svg-icon>
+            <p routerLink="/dashboard/contacts">Contacts</p>
+          </div>
         </div>
-        <div class="flex items-center gap-3 cursor-pointer">
-          <img src="assets/icons/accounts.svg" class="w-8 text-neutral-200">
-          <p routerLink="/dashboard/accounts">Accounts</p>
-        </div>
-        <div class="flex items-center gap-3 cursor-pointer">
-          <img src="assets/icons/invoice.svg" class="w-8 text-neutral-200">
-          <p routerLink="/dashboard/invoices">Invoices</p>
-        </div>
-        <div class="flex items-center gap-3 cursor-pointer">
-          <img src="assets/icons/report.svg" class="w-8 text-neutral-200">
-          <p routerLink="/dashboard/reports">Reports</p>
-        </div>
-        <div class="flex items-center gap-3 cursor-pointer">
-          <img src="assets/icons/documents.svg" class="w-8 text-neutral-200">
-          <p routerLink="/dashboard/documents">Documents</p>
-        </div>
-        <div class="flex items-center gap-3 cursor-pointer">
-          <img src="assets/icons/contacts.svg" class="w-8 text-neutral-200">
-          <p routerLink="/dashboard/contacts">Contacts</p>
-        </div>
-      </div>
-      <div class="text-center flex-grow py-20">
+      <div class="text-center flex-grow py-20 col-span-3">
         <router-outlet></router-outlet>
       </div>
     </div>
+
   </div>
 </div>
