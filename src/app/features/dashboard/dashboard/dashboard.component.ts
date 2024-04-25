@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {TopNavComponent} from "../../../top-nav/top-nav.component";
 import {RouterLink, RouterOutlet} from "@angular/router";
 import {AppSvgIconComponent} from "../../../shared/app-svg-icon/app-svg-icon.component";
+import {ResponsiveTableComponent} from "../../../responsive-table/responsive-table.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +11,8 @@ import {AppSvgIconComponent} from "../../../shared/app-svg-icon/app-svg-icon.com
     TopNavComponent,
     RouterLink,
     RouterOutlet,
-    AppSvgIconComponent
+    AppSvgIconComponent,
+    ResponsiveTableComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
